@@ -1,0 +1,18 @@
+{% extends "navbar.html" %}
+{% block content %}
+<h1>Welcome to this incredible website!</h1>
+<div style="display: flex; flex-direction: column; justify-content: space-between; flex-grow: 1; padding: 10px; text-align: center;">
+    <div>
+        <h3>What is this?</h3>
+        <p>This website will give you a <strong>random duck</strong>! </p>
+        <p>That's it... </p>
+        <p>Hello, World!</p>
+        <p style="font-size: 1.8em; font-weight: bolder;">Your duck is: {{name}}</p>
+        <img width="400px" src="{{image_url}}">
+    </div>
+    <div style="margin-top: 15px;">
+        <button onclick="window.location.href='https://wizardcinema-flipperhammer-4000.codio.io/proxy/5000/'">Give Me A New Duck!</button>
+    </div>
+    <div><p>&copy; 2025 Mateo. All rights reserved.</p></div>
+</div>
+{% endblock content %}
